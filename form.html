@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterForm</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+    
+    <h1> Registration Form </h1>
+
+    <fieldset>
+
+        <legend> Personal Information </legend>
+
+    <div class="firstname">
+
+        <label for="fn"> First Name: </label>
+        <input type="text" name="fn" id="fn" minlength="3" required>
+    </div>
+
+    <br> 
+
+    <div class="lastname">
+
+        <label for="ln"> Last Name: </label>
+        <input type="text" name="ln" id="ln" minlength="3" required>
+    </div>
+
+    <br>
+
+    <div class="age">
+        <label for="age"> Age: </label>
+        <input type="number" name="age" id="age" max="100" min="0" required> 
+    </div> 
+    <br>
+    <div class="gender">
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" name="gender">
+            <option value="male"> Male </option>
+            <option value="female"> Female </option>
+        </select>
+    </div>
+
+</fieldset>
+
+    <br><br>
+
+    <fieldset>
+
+        <legend> Contact Information </legend>
+
+    <div class="email">
+        <label for="email"> Email Address: </label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <br>
+
+    <div class="password">
+        <label for="password"> Password: </label>
+        <input type="password" id="password" name="password" required>
+
+    </div>
+
+    <br>
+
+        <div class="county"> 
+
+          <label for="county"> County: </label>  
+          <select name="county" id="county">
+            <optgroup label="Europe">
+                <option value="fr"> France </option>
+                <option value="dr"> German </option>
+                <option value="it"> Italy </option>
+            </optgroup>
+
+            <optgroup label="Asia">
+                <option value="ch"> China </option>
+                <option value="in"> India </option>
+                <option value="jp"> Japan </option>
+            </optgroup>
+
+            <optgroup label="Other">
+                <option value="usa"> United States </option>
+                <option value="cn"> Canada </option>
+                <option value="uk"> United Kingdom </option>
+            </optgroup>
+          </select>
+        </div>
+
+    </fieldset>
+
+        <br> <br>
+
+        <fieldset>
+
+            <legend> Address Information </legend>
+
+        <div class="address"> 
+
+            <label for="address"> Address: </label>
+            <input type="text" name="adress" id="adress" required >
+        </div>
+        <br>
+
+        <div class="city">
+            <label for="city"> City: </label>
+            <input type="text" name="city" id="city" required>
+        </div>
+    <br>
+        <div class="pc">
+            <label for="pc"> Postal Code: </label>
+            <input type="text" id="pc" name="pc" required>
+        </div>
+<br>
+        <div class="tel">
+            <label for="tel"> Phone Number: </label>
+            <input type="tel" id="tel" name="tel" required>
+
+        </div>
+
+    </fieldset>
+<br> <br>
+<div class="add">
+    <label for="add"> Additional Comments: </label>
+    <br>
+    <textarea name="add" id="add" cols="30" rows="10"></textarea>
+
+</div>
+
+<div class="sub">
+    <input type="checkbox" name="sub" id="sub">
+    <label for="sub"> Subscribe to our newsletter </label>
+</div>
+   
+<div class="done">
+    <input type="submit" name="Register" id="register" value="Register">
+</div>
+
+</form>
+    
+</body>
+</html>

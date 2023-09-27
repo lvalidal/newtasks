@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <form action="#" method="post">
+    
+        <h1> Event Registration Form </h1>
+    
+        <fieldset> 
+    
+            <legend> Personal Information </legend>
+    
+        <div class="name">
+    
+            <label for="name"> Full Name: </label>
+            <input type="text" name="name" id="name"  required minlength="3" maxlength="30">
+        </div>
+        <br>
+        <div class="email">
+            <label for="email"> Email Address: </label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+    
+        <div class="password">
+            <label for="password"> Password: </label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend> Personal Information </legend>
+    
+        <div class="eventname">
+    
+            <label for="event"> Event Name: </label>
+            <input type="text" name="event" id="event"  required>
+        </div>
+    
+        <br> 
+
+        <div class="date">
+            <label for="date"> Event Date: </label>
+            <input type="date" name="date" id="date" required>
+        </div>
+
+        <div class="loc">
+            <label for="loc"> Event Location </label>
+            <input type="text" name="loc" id="loc" required>
+        </div>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+
+        <legend> Ticket Selection </legend>
+
+        <div class="selection">
+
+            <p> Choose Ticket Type </p>
+            <input type="radio" name="ticket" id="tic">
+            <label for="tic"> Standart </label>
+            
+            <br>
+            <input type="radio" name="ticket" id="tick">
+            <label for="tick"> VIP </label>
+            
+        </div>
+
+        <br>
+
+        <div class="quantity">
+            <label for="qtt"> Quantity: </label>
+            <input type="number" name="qtt" id="qtt" required min="0" max="100"> 
+        </div> 
+    </fieldset>
+
+    <br>
+
+
+    <fieldset>
+
+        <legend> Dietary Preferences </legend>
+
+        <div class="diet">
+
+            <input type="checkbox" name="vegt" id="vegt">
+
+            <label for="vegt"> Vegetarian </label>
+
+            <br>
+
+            <input type="checkbox" name="veg" id="veg">
+
+            <label for="veg"> Vegan </label>
+
+            <br>
+
+            <input type="checkbox" name="gf" id="gf">
+
+            <label for="gf"> Gluten-Free </label>
+            
+        </div>
+    </fieldset>
+
+</fieldset>
+<br> <br>
+<div class="add">
+    <label for="add"> Additional Comments: </label>
+    <br>
+    <textarea name="add" id="add" cols="30" rows="10"></textarea>
+
+</div>
+
+<div class="sub">
+    <input type="checkbox" name="sub" id="sub" required>
+    <label for="sub"> I agree to the terms and conditions </label>
+</div>
+
+<div class="done">
+    <input type="submit" name="Register" id="register" value="Register">
+    <input type="reset" name="Reset" id="reset" value="Reset">
+</div>
+
+</body>
+</html>
